@@ -18,6 +18,7 @@ public class CharGridTest {
 				
 		assertEquals(4, cg.charArea('a'));
 		assertEquals(1, cg.charArea('z'));
+		assertEquals(0, cg.charArea('9'));
 	}
 	
 	
@@ -196,6 +197,6 @@ public class CharGridTest {
 		};
 
 		CharGrid cg = new CharGrid(grid);
-		assertEquals(0, cg.countPlus());
+		assertEquals(1, cg.countPlus());
 	}
 }
